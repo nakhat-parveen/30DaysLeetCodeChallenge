@@ -33,7 +33,7 @@ public class LinkedList {
     	if(list.head ==  null) return;
     	Node temp = list.head;
     	Node cycleNode = null;
-    	int count = 1;
+    	int count = 0;
     	while(temp.next != null) {
     		if(count == position) {
     			cycleNode = temp;
