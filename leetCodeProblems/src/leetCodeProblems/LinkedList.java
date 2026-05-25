@@ -9,6 +9,11 @@ public class LinkedList {
     		this.val = val;
     		next= null;
     	}
+		@Override
+		public String toString() {
+			return "Node [val=" + val + ", next=" + next + "]";
+		}
+    	
     }
     
     //insert an element at the end
@@ -45,5 +50,11 @@ public class LinkedList {
     	temp.next = cycleNode;
     	
     }
+
+	@Override
+	public String toString() {
+		return "LinkedList [head=" + head + "]";
+	}
+    
 
 }
