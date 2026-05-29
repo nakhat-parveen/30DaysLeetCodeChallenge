@@ -51,10 +51,21 @@ public class LinkedList {
     	
     }
 
-	@Override
-	public String toString() {
-		return "LinkedList [head=" + head + "]";
-	}
+    public void printList() {
+        Node curr = head;
+
+        while(curr != null) {
+            System.out.print(curr.val);
+
+            if(curr.next != null) {
+                System.out.print(" -> ");
+            }
+
+            curr = curr.next;
+        }
+
+        System.out.println();
+    }
     
 
 }
